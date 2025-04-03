@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buyer - E-commerce Platform</title>
+    <link rel="stylesheet" href="design.css">
+</head>
+<body>
+    <!-- Google Translate -->
+<div id="google_translate_element"></div>
+<script type="text/javascript">
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'hi,fr,es,ar,zh,ru,de,ja,bn,mr,te,ta,ur,gu,kn,ml,pa,fa', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+    }
+</script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+    <header>
+        <h1>Organic Mandi - Buy Fresh Produce</h1>
+        <a href="index.html">Back to Home</a>
+                    <a href="login.html">LOGIN</a>
+                    <div class="user-actions">
+        <div class="cart">
+            <h2>Shopping Cart</h2>
+            <ul id="cart-items"></ul>
+            <button onclick="checkout()">Checkout</button>
+        </div>
+     
+    </header>
+    
+    <div class="search-container">
+        <input type="text" id="search-bar" placeholder="Search for crops..." onkeyup="searchCrops()">
+    </div>
+
+    <section id="product-list" class="product-container">
+        <!-- Products will be dynamically inserted here -->
+    </section>
+    
+    <footer>
+        <p>© 2025 Organic Farming & food Website</p>
+    </footer>
+    
+    <script src="buyer.js"></script>
+</body>
+</html>
